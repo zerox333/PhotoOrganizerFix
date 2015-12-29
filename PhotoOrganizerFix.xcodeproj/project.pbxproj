@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D76045AA1C328CC90051CE51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76045A91C328CC90051CE51 /* Foundation.framework */; };
+		D76045B51C328CCA0051CE51 /* PhotoOrganizerFix.mm in Sources */ = {isa = PBXBuildFile; fileRef = D76045B41C328CCA0051CE51 /* PhotoOrganizerFix.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D76045A61C328CC90051CE51 /* PhotoOrganizerFix.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PhotoOrganizerFix.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76045A91C328CC90051CE51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D76045AE1C328CC90051CE51 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		D76045AF1C328CC90051CE51 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		D76045B11C328CC90051CE51 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		D76045B21C328CC90051CE51 /* PhotoOrganizerFix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoOrganizerFix-Prefix.pch"; sourceTree = "<group>"; };
+		D76045B31C328CCA0051CE51 /* PhotoOrganizerFix.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = PhotoOrganizerFix.xm; sourceTree = "<group>"; };
+		D76045B41C328CCA0051CE51 /* PhotoOrganizerFix.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhotoOrganizerFix.mm; sourceTree = "<group>"; };
+		D76045B91C328CCA0051CE51 /* PhotoOrganizerFix.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PhotoOrganizerFix.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/PhotoOrganizerFix.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76045A21C328CC90051CE51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76045AA1C328CC90051CE51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D760459B1C328CC90051CE51 = {
+			isa = PBXGroup;
+			children = (
+				D76045AB1C328CC90051CE51 /* PhotoOrganizerFix */,
+				D76045A81C328CC90051CE51 /* Frameworks */,
+				D76045A71C328CC90051CE51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D76045A71C328CC90051CE51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76045A61C328CC90051CE51 /* PhotoOrganizerFix.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76045A81C328CC90051CE51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D76045A91C328CC90051CE51 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D76045AB1C328CC90051CE51 /* PhotoOrganizerFix */ = {
+			isa = PBXGroup;
+			children = (
+				D76045B31C328CCA0051CE51 /* PhotoOrganizerFix.xm */,
+				D76045B41C328CCA0051CE51 /* PhotoOrganizerFix.mm */,
+				D76045AC1C328CC90051CE51 /* Package */,
+				D76045B01C328CC90051CE51 /* Supporting Files */,
+			);
+			path = PhotoOrganizerFix;
+			sourceTree = "<group>";
+		};
+		D76045AC1C328CC90051CE51 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D76045AD1C328CC90051CE51 /* DEBIAN */,
+				D76045B61C328CCA0051CE51 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		D76045AD1C328CC90051CE51 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				D76045AE1C328CC90051CE51 /* control.txt */,
+				D76045AF1C328CC90051CE51 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		D76045B01C328CC90051CE51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D76045B11C328CC90051CE51 /* PackageVersion.plist */,
+				D76045B21C328CC90051CE51 /* PhotoOrganizerFix-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D76045B61C328CCA0051CE51 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D76045B71C328CCA0051CE51 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D76045B71C328CCA0051CE51 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				D76045B81C328CCA0051CE51 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		D76045B81C328CCA0051CE51 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				D76045B91C328CCA0051CE51 /* PhotoOrganizerFix.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D76045A31C328CC90051CE51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D76045A51C328CC90051CE51 /* PhotoOrganizerFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76045BC1C328CCA0051CE51 /* Build configuration list for PBXNativeTarget "PhotoOrganizerFix" */;
+			buildPhases = (
+				D76045A01C328CC90051CE51 /* ShellScript */,
+				D76045A11C328CC90051CE51 /* Sources */,
+				D76045A21C328CC90051CE51 /* Frameworks */,
+				D76045A31C328CC90051CE51 /* Headers */,
+				D76045A41C328CC90051CE51 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoOrganizerFix;
+			productName = PhotoOrganizerFix;
+			productReference = D76045A61C328CC90051CE51 /* PhotoOrganizerFix.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D760459C1C328CC90051CE51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					D76045A51C328CC90051CE51 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = D760459F1C328CC90051CE51 /* Build configuration list for PBXProject "PhotoOrganizerFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D760459B1C328CC90051CE51;
+			productRefGroup = D76045A71C328CC90051CE51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76045A51C328CC90051CE51 /* PhotoOrganizerFix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D76045A01C328CC90051CE51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		D76045A41C328CC90051CE51 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76045A11C328CC90051CE51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76045B51C328CCA0051CE51 /* PhotoOrganizerFix.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D76045BA1C328CCA0051CE51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		D76045BB1C328CCA0051CE51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		D76045BD1C328CCA0051CE51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoOrganizerFix/PhotoOrganizerFix-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		D76045BE1C328CCA0051CE51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoOrganizerFix/PhotoOrganizerFix-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D760459F1C328CC90051CE51 /* Build configuration list for PBXProject "PhotoOrganizerFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76045BA1C328CCA0051CE51 /* Debug */,
+				D76045BB1C328CCA0051CE51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76045BC1C328CCA0051CE51 /* Build configuration list for PBXNativeTarget "PhotoOrganizerFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76045BD1C328CCA0051CE51 /* Debug */,
+				D76045BE1C328CCA0051CE51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D760459C1C328CC90051CE51 /* Project object */;
+}
