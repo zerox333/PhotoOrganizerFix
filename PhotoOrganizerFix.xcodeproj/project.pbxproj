@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D76045AA1C328CC90051CE51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76045A91C328CC90051CE51 /* Foundation.framework */; };
 		D76045B51C328CCA0051CE51 /* PhotoOrganizerFix.mm in Sources */ = {isa = PBXBuildFile; fileRef = D76045B41C328CCA0051CE51 /* PhotoOrganizerFix.mm */; };
+		D76045C21C328D080051CE51 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D76045C11C328D080051CE51 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +19,11 @@
 		D76045AF1C328CC90051CE51 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		D76045B11C328CC90051CE51 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		D76045B21C328CC90051CE51 /* PhotoOrganizerFix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoOrganizerFix-Prefix.pch"; sourceTree = "<group>"; };
-		D76045B31C328CCA0051CE51 /* PhotoOrganizerFix.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = PhotoOrganizerFix.xm; sourceTree = "<group>"; };
+		D76045B31C328CCA0051CE51 /* PhotoOrganizerFix.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhotoOrganizerFix.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		D76045B41C328CCA0051CE51 /* PhotoOrganizerFix.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhotoOrganizerFix.mm; sourceTree = "<group>"; };
 		D76045B91C328CCA0051CE51 /* PhotoOrganizerFix.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PhotoOrganizerFix.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/PhotoOrganizerFix.plist; sourceTree = "<group>"; };
+		D76045BF1C328CFC0051CE51 /* libactivator.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libactivator.dylib; path = ../../../../opt/iOSOpenDev/lib/libactivator.dylib; sourceTree = "<group>"; };
+		D76045C11C328D080051CE51 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76045C21C328D080051CE51 /* libsubstrate.dylib in Frameworks */,
 				D76045AA1C328CC90051CE51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +59,8 @@
 		D76045A81C328CC90051CE51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D76045C11C328D080051CE51 /* libsubstrate.dylib */,
+				D76045BF1C328CFC0051CE51 /* libactivator.dylib */,
 				D76045A91C328CC90051CE51 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -287,13 +293,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoOrganizerFix/PhotoOrganizerFix-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b115beec-5bde-4a22-8077-debdbc702658";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.233.61;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevRespringOnInstall = NO;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Debug;
@@ -307,13 +318,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoOrganizerFix/PhotoOrganizerFix-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b115beec-5bde-4a22-8077-debdbc702658";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.233.61;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
-				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevRespringOnInstall = NO;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Release;
@@ -337,6 +353,7 @@
 				D76045BE1C328CCA0051CE51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
