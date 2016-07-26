@@ -301,7 +301,7 @@
 				PROVISIONING_PROFILE = "b115beec-5bde-4a22-8077-debdbc702658";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.233.55;
+				iOSOpenDevDevice = 192.168.233.125;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = NO;
@@ -326,7 +326,7 @@
 				PROVISIONING_PROFILE = "b115beec-5bde-4a22-8077-debdbc702658";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = 192.168.233.55;
+				iOSOpenDevDevice = 192.168.233.125;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = NO;

@@ -18,3 +18,16 @@
 }
 
 %end
+
+%hook NSDictionary
+
++ (id)dictionaryWithObjectsAndKeys:(id)firstObject
+{
+    if ([[firstObject description] rangeOfString:@"PHAsset"].location != NSNotFound && [NSStringFromClass([firstObject class]) isEqualToString:@"__NSOrderedSetArrayProxy"])
+    {
+        return @{};
+    }
+    return %orig;
+}
+
+%end

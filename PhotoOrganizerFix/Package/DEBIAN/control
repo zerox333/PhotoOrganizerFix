@@ -1,6 +1,6 @@
 Package: com.zerox.PhotoOrganizerFix
 Name: PhotoOrganizerFix
-Version: 1.0-1
+Version: 1.1-1
 Description: Fix for PhotoOrganizer8's "Import & Sync" & "Sort By" under iOS 9.x
 Section: Tweak
 Depends: firmware (>= 9.0), mobilesubstrate
